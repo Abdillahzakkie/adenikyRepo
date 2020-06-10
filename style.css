@@ -141,6 +141,7 @@ Navbar
 .facilities .grid-flex {
 	background: #C4C4C4;
 	padding: 2rem;
+	margin: 2rem 1rem 0;
 }
 .facilities .grid-flex h2{
 	font-family: Rage Italic;
