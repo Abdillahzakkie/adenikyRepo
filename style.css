@@ -44,8 +44,9 @@ nav {
 	left: 0;
 	width: 100vw;
 	z-index: 99;
+	background:  #133E66;
 }
-.btn {
+nav .btn {
 	text-transform: uppercase;
 	background: transparent;
 	padding: 0.375rem 0.75rem;
@@ -86,7 +87,8 @@ Navbar
 	text-transform: capitalize;
 	display: block;
 	padding: 0.5rem 2rem !important;
-	/* background: green; */
+	color: rgba(255, 255, 255, 0.88);
+
 }
 .links a:hover {
 	padding-left: 1.5rem;
@@ -99,7 +101,7 @@ Navbar
 	overflow: hidden;
 }
 .show-links {
-	height: 17.5rem;
+	height: 21rem;
 }
 
 
@@ -121,46 +123,87 @@ Navbar
     position: absolute;
     bottom: 25vh;
     left: 0;
-    place-items: center;
+	place-items: center;
 }
 .heroBcg .featured-btn button{
     padding: 2rem;
     outline: none;
-    background: transparent;
-    border: .15rem solid #333;
-    border-radius: .5rem;
+	background: linear-gradient(180deg, rgba(52, 19, 105, 0.76) 95.31%, rgba(196, 196, 196, 0) 100%);
+	border-radius: .5rem;
+	border: none;
     letter-spacing: .2rem;
     word-spacing: .3rem;
     color: #fff;
     cursor: pointer;
     transition: all 2s ease-in-out;
 }
-.heroBcg .featured-btn button:hover{
-    border: .15rem solid #fff;
-    color: #fff;
-    background: #333;
+
+.facilities .grid-flex {
+	background: #C4C4C4;
+	padding: 2rem;
 }
-
-
+.facilities .grid-flex h2{
+	font-family: Rage Italic;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 64px;
+	line-height: 80px;
+	color: #133E66;
+}
+.facilities .grid-flex button{
+	padding: .5rem;
+    margin: 1rem 0;
+    letter-spacing: .2rem;
+    background: #133E66;
+    color: #fff;
+    border: .2rem solid #333;
+    padding: 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+	outline: none;
+	width: 150px;
+}
 .facilities .section {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: minmax(50px, 1fr);
+    grid-template-rows: minmax(20px, 1fr);
     grid-column-gap: 1rem;
     padding: 2rem;
     margin: 1rem 0;
-    grid-gap: 2rem;
+}
+.facilities .section p {
+	font-family: Roboto;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 2rem;
+	line-height: 56px;
+
+	color: #000000;
 }
 .facilities .section .excl {
-    background: #ddd;
+    background: #C4C4C4;
     padding: 2rem;
     position: relative;
 }
+.facilities .section div{
+	position: relative;
+}
 .facilities .section div .btn{
-    margin: auto;
+	margin: auto;
+	background: #133E66;
+	/* position: absolute;
+	bottom: 50px;
+	left: 20vw; */
+	place-self: center;
 }
 
 .facilities  .section h2 {
-    text-transform: capitalize;
+	font-family: Rage Italic;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 3rem;
+	line-height: 80px;
+	
+	color: #133E66;
 }
 .facilities  .section img {
     width: 100%;
@@ -170,13 +213,15 @@ Navbar
     padding: .5rem;
     margin: 1rem 0;
     letter-spacing: .2rem;
-    background: #f1f5f8;
-    color: #333;
+    background: #133E66;
+    color: #fff;
     border: .2rem solid #333;
     padding: 1rem;
     border-radius: .5rem;
     cursor: pointer;
-    outline: none;
+	outline: none;
+	width: 150px;
+	
 }
 
 @media screen and (min-width: 800px) {
@@ -215,6 +260,9 @@ Navbar
 	}
 }
 @media (max-width: 767px) {
+	.facilities .grid-flex button{
+		place-self: center;
+	}
     .facilities  .section {
         grid-template-columns: 1fr;
     }
